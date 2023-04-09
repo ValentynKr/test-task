@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "836485a4-3625-466b-a293-c63b8548eea4",
+		"name": "TestCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23081146"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "findAllUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwNDQ5MTgsImV4cCI6MTY4MTA0ODUxOH0.NxN-k_stKDrSaBI0P-avWuQpIHteEhmu_NLHNTXaNUIp9Me1fF_1iQIbjDXBSA6O1xeU22VKBXY8Cp1OlYVImg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwMzg2NTAsImV4cCI6MTY4MTA0MDA5MH0.UdgC2YX_kUGh8dgb-JwVcr_iFb7JyK8TO3j3GmwvK9dV9euKjFbfBqMdq_a5MRzpSHquy0-kOufDGB8G8EhELg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Phil Collins\",\r\n    \"age\": 72\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllUsersWithAgeMoreThan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwMzg2NTAsImV4cCI6MTY4MTA0MDA5MH0.UdgC2YX_kUGh8dgb-JwVcr_iFb7JyK8TO3j3GmwvK9dV9euKjFbfBqMdq_a5MRzpSHquy0-kOufDGB8G8EhELg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/ageMoreThan/30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"ageMoreThan",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllUsersWithColorOfArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwMzg2NTAsImV4cCI6MTY4MTA0MDA5MH0.UdgC2YX_kUGh8dgb-JwVcr_iFb7JyK8TO3j3GmwvK9dV9euKjFbfBqMdq_a5MRzpSHquy0-kOufDGB8G8EhELg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/withColorOfArticle/red",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"withColorOfArticle",
+								"red"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllUsersWithArticleQuantity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwMzg2NTAsImV4cCI6MTY4MTA0MDA5MH0.UdgC2YX_kUGh8dgb-JwVcr_iFb7JyK8TO3j3GmwvK9dV9euKjFbfBqMdq_a5MRzpSHquy0-kOufDGB8G8EhELg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/withArticleQuantity/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"withArticleQuantity",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "article",
+			"item": [
+				{
+					"name": "findAllArticles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwNDAxOTYsImV4cCI6MTY4MTA0MTYzNn0.SyZ7ALrQKF9ApJoVhbNEcR_Wg9sgK1Fr4JrgeiU1tnPUqQakQErMuXBWVmYsUt2z32ZpV7Q7b2tKLEFilb7Njw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJHZW9yZ2UgSGFycmlzb24iLCJpYXQiOjE2ODEwNDAxOTYsImV4cCI6MTY4MTA0MTYzNn0.SyZ7ALrQKF9ApJoVhbNEcR_Wg9sgK1Fr4JrgeiU1tnPUqQakQErMuXBWVmYsUt2z32ZpV7Q7b2tKLEFilb7Njw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"How to play the quitar\",\r\n    \"color\":\"red\",\r\n    \"userId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"articles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authentification",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"George Harrison\",\r\n    \"age\":75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"George Harrison\",\r\n    \"age\":75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
